@@ -95,7 +95,7 @@ background-color: #CDD8E6;
     padding: 10em;
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom,rgba(51, 81, 103, 1),rgba(132, 147, 155, 0.8)), url("../images/why-me-bg.jpg");
+    background-image: linear-gradient(to right bottom,rgba(51, 81, 103, 1),rgba(132, 147, 155, 0.8)), url("../images/why-me-bg-min.jpg");
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(0 12vh,100% 0,100% 78vh,0 100%);
