@@ -5,6 +5,7 @@
     color: #666666;
     font-size: 16px;
 }
+
 button.btn {
     border-radius: 20px;
     color: #ffffff;
@@ -12,16 +13,35 @@ button.btn {
     padding: .5em 1.5em;
     font-size: .8em;
 }
+
 h2 {
     text-transform: capitalize;
 }
+
+.navbar {
+    background-color: #FFB456;
+}
+
+.navbar .nav-item {
+    margin-right: 3em;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: #666666;
+}
+
 .header-content {
     height: 95vh;
     position: relative;
     z-index: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     line-height: 150%;
 }
+
 .header-content img {
     width: 100%;
 }
@@ -48,7 +68,7 @@ h2 {
     margin-top: 2em;
 }
 
-.header-content .header-introduction-block button, .about-me-block button{
+.header-content .header-introduction-block button, .about-me-block button {
     background-color: #FFB456;
     margin-top: 1em;
     font-size: .6em;
@@ -59,13 +79,13 @@ h2 {
     padding: 3em;
 }
 
-.header-content .header-options-block .col h5{
+.header-content .header-options-block .col h5 {
     font-size: .9em;
     margin-bottom: 1em;
     color: #212326;
 }
 
-.header-content .header-options-block .col p{
+.header-content .header-options-block .col p {
     font-size: .8em;
 }
 
@@ -78,28 +98,25 @@ h2 {
 }
 
 .header-content .header-options-block .col:first-child {
-background-color: #BECEDB;
+    background-color: #BECEDB;
     height: 50vh;
 }
 
 .header-content .header-options-block .col:last-child {
-background-color: #CDD8E6;
+    background-color: #CDD8E6;
     height: 50vh;
 }
 
 /*WHY ME*/
 
 .why-me {
-    margin-top: -5.5em;
     z-index: 1;
     padding: 10em;
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to right bottom,rgba(51, 81, 103, 1),rgba(132, 147, 155, 0.8)), url("../images/why-me-bg-min.jpg");
+    background-image: linear-gradient(to right bottom, rgba(51, 81, 103, 1), rgba(132, 147, 155, 0.8)), url("../images/why-me-bg-min.jpg");
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 12vh,100% 0,100% 78vh,0 100%);
-    clip-path: polygon(0 12vh,100% 0,100% 78vh,0 100%);
 }
 
 .why-me .col .top-title, .why-me .col h2, .why-me .col p, .why-me .col ul li {
@@ -125,35 +142,37 @@ background-color: #CDD8E6;
 .why-me .col ul {
     padding-top: 6em;
 }
+
 .why-me .col ul li {
     list-style: square;
 }
 
 /*COACHING OPTIONS*/
 .coaching-options {
-    margin-top: -8em;
     padding: 15em 4em;
     background-color: #FFC879;
     text-align: center;
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 0,100% 0,100% 78vh,0 100%);
-    clip-path: polygon(0 0,100% 0,100% 78vh,0 100%);
 }
 
 .coaching-options p, .option-title {
     color: #ffffff;
     margin-top: 1em;
 }
+
 .coaching-options p {
     font-size: .8em;
 }
+
 .coaching-options i {
     font-size: 1.5em;
 }
+
 .coaching-options i, .coaching-options button {
     color: #64615b;
 }
+
 .coaching-options button {
     margin-top: 2em;
 }
@@ -179,15 +198,13 @@ background-color: #CDD8E6;
 
 .coaching-program ul li {
     padding: .6em;
-    background-image: linear-gradient(to right bottom,rgba(51, 81, 103, .4),rgba(132, 147, 155, 0.1));
+    background-image: linear-gradient(to right bottom, rgba(51, 81, 103, .4), rgba(132, 147, 155, 0.1));
 }
 
 .about-me {
     background-image: url("../images/smiling-girl-2.jpg");
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 12vh,100% 0,100% 55vh,0 100%);
-    clip-path: polygon(0 12vh,100% 0,100% 55vh,0 100%);
     z-index: 1;
     padding: 8em 10em;
     position: relative;
@@ -199,9 +216,9 @@ background-color: #CDD8E6;
     padding: 20em 6em 10em;
     background-color: #F6F6F6;
     text-align: center;
-    margin-top: -4em;
     position: relative;
 }
+
 .testimonials div {
     display: inline-block;
     width: 20%;
@@ -209,9 +226,11 @@ background-color: #CDD8E6;
     background-color: #ffffff;
     padding: 1em;
 }
+
 .testimonials div.last-testimonial {
     margin-right: 0;
 }
+
 .testimonials div.about-me-block {
     background: #ffffff;
     padding: 2em;
@@ -259,6 +278,7 @@ input {
     border: none;
     box-shadow: none;
 }
+
 button.btn-subscribe {
     width: 100%;
     background-color: #335167;
@@ -272,79 +292,87 @@ div.social-icons {
     background-color: transparent;
     margin-top: 2em;
 }
+
 .social-icons a {
     padding-right: 1em;
 }
-.social-icons i{
-font-size: 1.5em;
+
+.social-icons i {
+    font-size: 1.5em;
     color: #ffffff;
 }
 
 .social-icons i:hover {
     color: #335167;
 }
+
 .appointment {
-    background-image: linear-gradient(to right bottom,rgba(255, 190, 110, 1),rgba(234, 199, 147, 0.8));
+    background-image: linear-gradient(to right bottom, rgba(255, 190, 110, 1), rgba(234, 199, 147, 0.8));
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 12vh,100% 0,100% 65vh,0 100%);
-    clip-path: polygon(0 12vh,100% 0,100% 65vh,0 100%);
     z-index: 1;
     padding: 10em;
-    margin-top: -6em;
     text-align: right;
     position: relative;
-    height: 85vh;
+    height: 65vh;
 }
 
 .appointment button {
     color: #313131;
     margin-top: 1em;
 }
+
 .appointment p {
     color: #ffffff;
     font-size: .9em;
     text-align: justify;
     padding-left: 2em;
 }
+
 .appointment .row .col-6:first-child {
     padding-right: 2em;
 }
 
 footer {
-    background-image: linear-gradient(to right bottom,rgba(51, 81, 103, 1),rgba(132, 147, 155, 0.8)), url("../images/footer-bg.jpg");
+    background-image: linear-gradient(to right bottom, rgba(51, 81, 103, 1), rgba(132, 147, 155, 0.8)), url("../images/footer-bg.jpg");
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 12vh,100% 0,100% 100%,0 100%);
-    clip-path: polygon(0 12vh,100% 0,100% 100%,0 100%);
     z-index: 1;
     padding: 8em;
-    margin-top: -10em;
     text-align: center;
     position: relative;
-    height: 95vh;
+    height: 65vh;
 }
+
 footer h2, .appointment h2 {
-color: #ffffff;
+    color: #ffffff;
     line-height: 150%;
 }
+
 footer h2 {
     margin-bottom: 1em;
     font-size: 1.8em;
 }
+
 footer input {
     border-radius: 3px;
     margin-top: 0;
 }
+
 textarea {
     width: 100%;
     padding: 1em;
 }
+
 .text-right {
     text-align: right;
     font-size: .8em;
     margin-top: .8em;
 }
+
 .text-right button {
     background-color: #FFB456;
+}
+.copyright {
+    color: #ffffff;
 }
