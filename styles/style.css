@@ -5,6 +5,9 @@
     color: #666666;
     font-size: 16px;
 }
+body {
+    overflow-x: hidden;
+}
 
 button.btn {
     border-radius: 20px;
@@ -35,10 +38,7 @@ h2 {
 }
 
 .header-content {
-    height: 95vh;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
+    height: 100%;
     line-height: 150%;
 }
 
@@ -99,12 +99,12 @@ h2 {
 
 .header-content .header-options-block .col:first-child {
     background-color: #BECEDB;
-    height: 50vh;
+    height: 23vh;
 }
 
 .header-content .header-options-block .col:last-child {
     background-color: #CDD8E6;
-    height: 50vh;
+    height: 23vh;
 }
 
 /*WHY ME*/
@@ -113,37 +113,38 @@ h2 {
     z-index: 1;
     padding: 10em;
     position: relative;
-    height: 95vh;
+    height: 100%;
     background-image: linear-gradient(to right bottom, rgba(51, 81, 103, 1), rgba(132, 147, 155, 0.8)), url("../images/why-me-bg-min.jpg");
     background-size: cover;
     background-position: top;
 }
 
-.why-me .col .top-title, .why-me .col h2, .why-me .col p, .why-me .col ul li {
+.why-me div .top-title, .why-me div h2, .why-me div p, .why-me div ul li {
     color: #ffffff;
     line-height: 170%;
 }
 
-.why-me .col:first-child {
+.why-me div:first-child {
     text-align: right;
 }
 
-.why-me .col:first-child .top-title {
+.why-me div:first-child .top-title {
     font-size: .9em;
 }
 
-.why-me .col:first-child button {
+.why-me div:first-child button {
     margin-top: 1em;
     background-color: #ffffff;
     border-color: transparent;
     color: #FFB456;
 }
 
-.why-me .col ul {
+.why-me div ul {
     padding-top: 6em;
+    text-align: left;
 }
 
-.why-me .col ul li {
+.why-me div ul li {
     list-style: square;
 }
 
@@ -314,7 +315,7 @@ div.social-icons {
     padding: 10em;
     text-align: right;
     position: relative;
-    height: 65vh;
+    height: 100%;
 }
 
 .appointment button {
@@ -341,7 +342,7 @@ footer {
     padding: 8em;
     text-align: center;
     position: relative;
-    height: 65vh;
+    height: 100%;
 }
 
 footer h2, .appointment h2 {
@@ -375,4 +376,94 @@ textarea {
 }
 .copyright {
     color: #ffffff;
+}
+@media (min-width: 1200px) {
+    .why-me {
+        height: 95vh;
+    }
+}
+
+@media (max-width: 992px) {
+    * {
+        font-size: 14px;
+    }
+    .header-content .header-introduction-block {
+        padding: 6em 1em 3em;
+    }
+    .testimonials div {
+        width: 29%;
+    }
+    .about-me {
+        height: 33vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content .header-introduction-block {
+        padding: 2em 1em 1em;
+    }
+    .header-content .header-introduction-block h2 {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .header-content .header-options-block .col:first-child, .header-content .header-options-block .col:last-child {
+        height: 15vh;
+    }
+    .header-content .header-options-block .col {
+        padding: 1em;
+    }
+    .coaching-options, .coaching-program {
+        padding: 4em;
+    }
+    .testimonials div.join-me {
+        width: 41%;
+        right: 10%;
+    }
+    .testimonials div.about-me-block {
+        width: 41%;
+        left: 10%;
+    }
+    .testimonials h2 {
+        margin-top: 3em;
+    }
+    .appointment {
+        padding: 5em;
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        text-align: center;
+    }
+
+    .header-content img {
+        height: 50vh;
+        width: auto;
+    }
+    .why-me {
+        padding: 3em;
+    }
+    .why-me div:first-child, .why-me div:last-child {
+        text-align: center;
+    }
+    .testimonials div.join-me {
+        width: 51%;
+        right: 0;
+    }
+    .testimonials div.about-me-block {
+        width: 51%;
+        left: 0;
+    }
+    .testimonials div {
+        width: 100%;
+        margin-bottom: 5%;
+        display: block;
+    }
+    .testimonials h2 {
+        margin-top: 6em;
+    }
+    footer {
+        padding: 3em;
+    }
 }
